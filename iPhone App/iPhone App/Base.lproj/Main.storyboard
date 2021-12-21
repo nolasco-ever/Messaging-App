@@ -183,6 +183,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="createUser:" destination="aMo-Gn-iIa" eventType="touchUpInside" id="WCY-XO-cBI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
