@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75CF2771797A002BEA30 /* AppDelegate.swift */; };
 		5A1E75D22771797A002BEA30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75D12771797A002BEA30 /* SceneDelegate.swift */; };
-		5A1E75D42771797A002BEA30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75D32771797A002BEA30 /* ViewController.swift */; };
+		5A1E75D42771797A002BEA30 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75D32771797A002BEA30 /* LoginPage.swift */; };
 		5A1E75D72771797A002BEA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E75D52771797A002BEA30 /* Main.storyboard */; };
 		5A1E75D92771797A002BEA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E75D82771797A002BEA30 /* Assets.xcassets */; };
 		5A1E75DC2771797A002BEA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E75DA2771797A002BEA30 /* LaunchScreen.storyboard */; };
 		5A1E75E72771797A002BEA30 /* iPhone_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75E62771797A002BEA30 /* iPhone_AppTests.swift */; };
 		5A1E75F12771797A002BEA30 /* iPhone_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */; };
 		5A1E75F32771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */; };
+		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
+		5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		5A1E75CC2771797A002BEA30 /* iPhone App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1E75CF2771797A002BEA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A1E75D12771797A002BEA30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A1E75D32771797A002BEA30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A1E75D32771797A002BEA30 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		5A1E75D62771797A002BEA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A1E75D82771797A002BEA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1E75DB2771797A002BEA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		5A1E75EC2771797A002BEA30 /* iPhone AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITests.swift; sourceTree = "<group>"; };
 		5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				5A1E75CF2771797A002BEA30 /* AppDelegate.swift */,
 				5A1E75D12771797A002BEA30 /* SceneDelegate.swift */,
-				5A1E75D32771797A002BEA30 /* ViewController.swift */,
+				5A1E75D32771797A002BEA30 /* LoginPage.swift */,
 				5A1E75D52771797A002BEA30 /* Main.storyboard */,
 				5A1E75D82771797A002BEA30 /* Assets.xcassets */,
 				5A1E75DA2771797A002BEA30 /* LaunchScreen.storyboard */,
 				5A1E75DD2771797A002BEA30 /* Info.plist */,
+				5A1E760127718D5E002BEA30 /* SignUpPage.swift */,
+				5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A1E75D42771797A002BEA30 /* ViewController.swift in Sources */,
+				5A1E75D42771797A002BEA30 /* LoginPage.swift in Sources */,
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
+				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
+				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,
 				5A1E75D22771797A002BEA30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

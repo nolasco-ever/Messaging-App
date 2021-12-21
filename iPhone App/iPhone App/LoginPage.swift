@@ -7,9 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+class LoginPage: UIViewController {
     
     let radius = 10
 
@@ -22,14 +20,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         userTextField.layer.cornerRadius = CGFloat(radius)
-        
         passwordTextField.layer.cornerRadius = CGFloat(radius)
-        passwordTextField.layer.bounds.inset(by: padding)
-        
         loginButton.layer.cornerRadius = CGFloat(radius)
         signUpButton.layer.cornerRadius = CGFloat(radius)
+        
     }
-
-
+    
+    @IBAction func goToSignup() {
+        guard let signUpVC = storyboard?.instantiateViewController(withIdentifier: "sign_up_vc") as? SignUpPage else{
+            return
+        }
+        
+        signUpVC.modalPresentationStyle = .fullScreen
+                
+        present(signUpVC, animated: true)
+    }
+    
 }
 
