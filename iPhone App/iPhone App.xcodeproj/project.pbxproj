@@ -18,6 +18,7 @@
 		5A1E75F32771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */; };
 		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
 		5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */; };
+		5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDC2771AB1F00078665 /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelection.swift; sourceTree = "<group>"; };
+		5A9F8BDC2771AB1F00078665 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				5A1E75DD2771797A002BEA30 /* Info.plist */,
 				5A1E760127718D5E002BEA30 /* SignUpPage.swift */,
 				5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */,
+				5A9F8BDC2771AB1F00078665 /* HomePage.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1E75D42771797A002BEA30 /* LoginPage.swift in Sources */,
+				5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */,
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
 				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,

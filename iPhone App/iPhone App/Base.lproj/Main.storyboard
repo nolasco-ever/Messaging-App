@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -241,24 +240,106 @@
             </objects>
             <point key="canvasLocation" x="680" y="83"/>
         </scene>
-        <!--View Controller-->
+        <!--Avatar Selection-->
         <scene sceneID="Qx5-eW-RpD">
             <objects>
-                <viewController id="tNk-nJ-eit" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="avatar_selection" id="tNk-nJ-eit" customClass="AvatarSelection" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2IK-po-Bs6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLy-vJ-FuP">
+                                <rect key="frame" x="109" y="69" width="173" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-bO-pnI">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="INY-cG-5Ik"/>
+                                            <constraint firstAttribute="width" constant="54" id="tDd-ct-5ar"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fyc-4c-yo8">
+                                        <rect key="frame" x="54" y="0.0" width="119" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xne-zH-bs4">
+                                <rect key="frame" x="139" y="144" width="113" height="19.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vBT-Wg-ycs">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dPK-zi-XU7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Yellow"/>
+                        <constraints>
+                            <constraint firstItem="eLy-vJ-FuP" firstAttribute="top" secondItem="dPK-zi-XU7" secondAttribute="top" constant="25" id="8Wl-lK-0Ta"/>
+                            <constraint firstItem="Xne-zH-bs4" firstAttribute="top" secondItem="eLy-vJ-FuP" secondAttribute="bottom" constant="15" id="BbN-GO-4Vk"/>
+                            <constraint firstItem="Xne-zH-bs4" firstAttribute="leading" secondItem="dPK-zi-XU7" secondAttribute="leading" constant="139" id="QOi-LI-qz6"/>
+                            <constraint firstItem="dPK-zi-XU7" firstAttribute="trailing" secondItem="Xne-zH-bs4" secondAttribute="trailing" constant="138" id="bo3-Pp-FH7"/>
+                            <constraint firstItem="dPK-zi-XU7" firstAttribute="trailing" secondItem="eLy-vJ-FuP" secondAttribute="trailing" constant="108" id="dIX-Wu-Ftb"/>
+                            <constraint firstItem="eLy-vJ-FuP" firstAttribute="leading" secondItem="dPK-zi-XU7" secondAttribute="leading" constant="109" id="lPb-gs-Wun"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UId-gQ-qaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421" y="101"/>
+            <point key="canvasLocation" x="1344.6153846153845" y="81.753554502369667"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="jgj-7b-sEL">
+            <objects>
+                <viewController id="bEf-5j-KzX" customClass="HomePage" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lxq-23-Nbg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xm-R7-7Ja">
+                                <rect key="frame" x="109" y="69" width="173" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-NR-0X0">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="54" id="S8c-3y-s1g"/>
+                                            <constraint firstAttribute="height" constant="60" id="xYR-Ea-Ep2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-kR-7SU">
+                                        <rect key="frame" x="54" y="0.0" width="119" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UhS-fh-wG3"/>
+                        <color key="backgroundColor" name="BackgroundWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Xm-R7-7Ja" firstAttribute="top" secondItem="UhS-fh-wG3" secondAttribute="top" constant="25" id="3Oc-Vo-M3J"/>
+                            <constraint firstItem="UhS-fh-wG3" firstAttribute="trailing" secondItem="3Xm-R7-7Ja" secondAttribute="trailing" constant="108" id="Bdh-yy-xft"/>
+                            <constraint firstItem="3Xm-R7-7Ja" firstAttribute="leading" secondItem="UhS-fh-wG3" secondAttribute="leading" constant="109" id="JBJ-pJ-5gn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDO-GJ-ImX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="82"/>
         </scene>
     </scenes>
     <resources>
         <image name="earth-logo" width="375" height="375"/>
+        <namedColor name="BackgroundWhite">
+            <color red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DarkBlue">
             <color red="0.070588235294117646" green="0.17254901960784313" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -271,8 +352,5 @@
         <namedColor name="Yellow">
             <color red="0.99607843137254903" green="0.9882352941176471" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
