@@ -1,13 +1,13 @@
 //
-//  Messaging_AppUITestsLaunchTests.swift
-//  Messaging AppUITests
+//  iPhone_AppUITestsLaunchTests.swift
+//  iPhone AppUITests
 //
 //  Created by Ever Nolasco on 12/20/21.
 //
 
 import XCTest
 
-class Messaging_AppUITestsLaunchTests: XCTestCase {
+class iPhone_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

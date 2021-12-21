@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IgD-He-VRg">
+                                <rect key="frame" x="136" y="69" width="119" height="28.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-fS-WuY">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oHH-sh-Gxy">
+                                <rect key="frame" x="8" y="97.666666666666686" width="375" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qcc-IH-Lpx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="emz-Ai-13j">
+                                <rect key="frame" x="43" y="472.66666666666674" width="305" height="169"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlY-JZ-vZQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="8oD-LJ-wvM"/>
+                                            <constraint firstAttribute="width" constant="305" id="Jhu-tj-ve8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fS-ug-fDn">
+                                        <rect key="frame" x="0.0" y="59.999999999999943" width="305" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="305" id="INX-dz-uuZ"/>
+                                            <constraint firstAttribute="height" constant="49" id="N2S-yK-JVq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sb-Rm-AnP">
+                                        <rect key="frame" x="0.0" y="119.99999999999994" width="305" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="C99-hH-WaT"/>
+                                            <constraint firstAttribute="width" constant="305" id="FOK-rJ-2F7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.28235294117647058" green="0.83921568627450982" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UTH-fh-F0O">
+                                <rect key="frame" x="43" y="716.66666666666663" width="305" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le4-UG-5nm">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="8fx-78-jjf"/>
+                                            <constraint firstAttribute="width" constant="305" id="cJE-G3-019"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.16470588235294117" green="0.43529411764705883" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99607843159999998" green="0.98823523520000001" blue="0.77647060160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="emz-Ai-13j" firstAttribute="top" secondItem="oHH-sh-Gxy" secondAttribute="bottom" id="2rl-UH-Gu4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IgD-He-VRg" secondAttribute="trailing" constant="135" id="JnP-3C-U8w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UTH-fh-F0O" secondAttribute="trailing" constant="42" id="MpF-Tt-iGs"/>
+                            <constraint firstItem="emz-Ai-13j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="RUr-Hd-I4I"/>
+                            <constraint firstItem="IgD-He-VRg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="W1q-fr-hts"/>
+                            <constraint firstItem="oHH-sh-Gxy" firstAttribute="top" secondItem="IgD-He-VRg" secondAttribute="bottom" id="X9j-BQ-gwv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oHH-sh-Gxy" secondAttribute="trailing" constant="7" id="blH-Uy-FyT"/>
+                            <constraint firstItem="IgD-He-VRg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="eb2-Fs-6b2"/>
+                            <constraint firstItem="UTH-fh-F0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="gyn-zN-PGi"/>
+                            <constraint firstItem="oHH-sh-Gxy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="jaX-t5-tPp"/>
+                            <constraint firstItem="UTH-fh-F0O" firstAttribute="top" secondItem="emz-Ai-13j" secondAttribute="bottom" constant="75" id="ljP-Hp-H5R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emz-Ai-13j" secondAttribute="trailing" constant="42" id="sNP-ds-sve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="6sb-Rm-AnP" id="cUP-dx-GfY"/>
+                        <outlet property="passwordTextField" destination="9fS-ug-fDn" id="xye-rJ-Jqc"/>
+                        <outlet property="signUpButton" destination="le4-UG-5nm" id="0Au-gn-NnR"/>
+                        <outlet property="userTextField" destination="JlY-JZ-vZQ" id="bsf-t3-saU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="83.175355450236964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth-logo" width="375" height="375"/>
+    </resources>
+</document>

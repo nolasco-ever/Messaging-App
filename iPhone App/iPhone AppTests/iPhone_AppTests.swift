@@ -1,14 +1,14 @@
 //
-//  Messaging_AppTests.swift
-//  Messaging AppTests
+//  iPhone_AppTests.swift
+//  iPhone AppTests
 //
 //  Created by Ever Nolasco on 12/20/21.
 //
 
 import XCTest
-@testable import Messaging_App
+@testable import iPhone_App
 
-class Messaging_AppTests: XCTestCase {
+class iPhone_AppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
