@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class SignUpPage: UIViewController {
     let auth = Auth.auth()
@@ -35,7 +36,12 @@ class SignUpPage: UIViewController {
         
         signUp(name: name, email: email, password: password)
         
+        //navigate to avatar selection page
+        guard let avatarSelectionVC = storyboard?.instantiateViewController(withIdentifier: "avatar_selection") as? AvatarSelection else { return }
         
+        avatarSelectionVC.modalPresentationStyle = .fullScreen
+        
+        present(avatarSelectionVC, animated: true)
     }
     
     @IBAction func goBack(_ sender: Any) {
@@ -53,6 +59,13 @@ class SignUpPage: UIViewController {
             }
             
 //            Success
+            let db = Firestore.firestore()
+            let id = result!.user.uid
+            
+            db.collection("users").document(id).setData([
+                "id": id,
+                "name": name,
+                "email": email])
         }
     }
 }

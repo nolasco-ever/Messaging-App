@@ -38,7 +38,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="emz-Ai-13j">
                                 <rect key="frame" x="43" y="472.66666666666674" width="305" height="169"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlY-JZ-vZQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlY-JZ-vZQ">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="49"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -69,6 +69,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseBackgroundColor" name="DarkGreen"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nc-pS-knE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -153,7 +156,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bta-24-vuv">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bta-24-vuv">
                                         <rect key="frame" x="0.0" y="57" width="305" height="49"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -300,7 +303,7 @@
         <!--Home Page-->
         <scene sceneID="jgj-7b-sEL">
             <objects>
-                <viewController id="bEf-5j-KzX" customClass="HomePage" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homepage_vc" id="bEf-5j-KzX" customClass="HomePage" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lxq-23-Nbg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
