@@ -24,6 +24,7 @@
 		5A9F8BE42771AFC600078665 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9F8BE32771AFC600078665 /* FirebaseAuth */; };
 		5A9F8BE62771AFC600078665 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9F8BE52771AFC600078665 /* FirebaseDatabase */; };
 		5A9F8BE82771AFC600078665 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9F8BE72771AFC600078665 /* FirebaseFirestore */; };
+		5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB188A627768E4300C3BF3D /* SearchPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelection.swift; sourceTree = "<group>"; };
 		5A9F8BDC2771AB1F00078665 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		5A9F8BDE2771AEF800078665 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AB188A627768E4300C3BF3D /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */,
 				5A9F8BDC2771AB1F00078665 /* HomePage.swift */,
 				5A9F8BDE2771AEF800078665 /* GoogleService-Info.plist */,
+				5AB188A627768E4300C3BF3D /* SearchPage.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */,
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
+				5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */,
 				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,
 				5A1E75D22771797A002BEA30 /* SceneDelegate.swift in Sources */,
 			);
