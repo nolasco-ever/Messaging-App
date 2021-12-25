@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class HomePage: UIViewController {
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -69,7 +69,7 @@ class LoginPage: UIViewController {
     }
     
     func goToHomePage(){
-        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else{ return }
+        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "avatar_selection") as? AvatarSelection else{ return }
         
         homepageVC.modalPresentationStyle = .fullScreen
         
