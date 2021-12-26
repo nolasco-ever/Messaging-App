@@ -12,11 +12,18 @@ class AvatarSelection: UIViewController {
 
     @IBOutlet weak var avatarCollectionView: UICollectionView!
     
+    @IBOutlet weak var finishButton: UIButton!
+    
     //create firestore database variable
     let db = Firestore.firestore()
     
     //initialize empty array
     var avatarArray: [String] = []
+    
+    //variable to hold selected cell
+    var selectedCell: Int = 0
+    
+    var selectedAvatarLink: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,33 +42,34 @@ class AvatarSelection: UIViewController {
                     let link = doc.get("link") as! String
                     print("DOCUMENT RESULT: \(link)")
                     avatarArray.append(link)
+                    
+                    let indexPath = IndexPath(row: avatarArray.count-1, section: 0)
+                    avatarCollectionView.insertItems(at: [indexPath])
                 }
+
+                print("AVATAR ARRAY: \(avatarArray[selectedCell])")
                 
-                print("AVATAR ARRAY: \(avatarArray)")
+                selectedAvatarLink = avatarArray[selectedCell]
             }
         }
         
     }
     
-//    func createAvatarArray() -> [String]{
-//        var tempArray: [String] = []
-//
-//        return db.collection("avatars").getDocuments() { [self] (querySnapshot, err) in
-//            if let err = err {
-//                print("Error getting documents: \(err)")
-//            }
-//            else{
-//                //append all avatar links to avatarArray
-//                for doc in querySnapshot!.documents{
-//                    let link = doc.get("link") as! String
-//                    print("DOCUMENT RESULT: \(link)")
-//                    tempArray.append(link)
-//                }
-//
-//                return tempArray
-//            }
-//        }
-//    }
+    @IBAction func setAvatar(_ sender: Any) {
+        if let currentUserID = UserDefaults.standard.object(forKey: "user_uid_key") as? String {
+            db.collection("users").document(currentUserID).setData([
+                "image": selectedAvatarLink
+            ], merge: true)
+        }
+        
+        //navigate to homepage
+        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else { return }
+        
+        homepageVC.modalPresentationStyle = .fullScreen
+        
+        present(homepageVC, animated: true)
+    }
+    
 
 }
 
@@ -84,6 +92,16 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
         cell.layer.cornerRadius = cell.frame.height / 2
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell: UICollectionViewCell = avatarCollectionView.cellForItem(at: indexPath)!
+
+        cell.layer.borderWidth = 5
+        cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        selectedCell = indexPath.row
+        print(avatarArray[indexPath.row])
     }
     
     func getImageFromUrl(from url: String) -> UIImage{

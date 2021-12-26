@@ -306,6 +306,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseBackgroundColor" name="LightBlue"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="setAvatar:" destination="tNk-nJ-eit" eventType="touchUpInside" id="Dks-Jm-BPB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -321,7 +324,7 @@
                                     <size key="estimatedItemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="Heb-FC-XhW" customClass="AvatarCell" customModule="iPhone_App" customModuleProvider="target">
@@ -372,6 +375,7 @@
                     </view>
                     <connections>
                         <outlet property="avatarCollectionView" destination="G4y-zl-7cc" id="pAV-iv-qLq"/>
+                        <outlet property="finishButton" destination="mxQ-Jk-jzG" id="4mD-4S-jiW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UId-gQ-qaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
