@@ -30,14 +30,17 @@ class UserSearchCell: UITableViewCell {
     
     func setAddButton(id: String) {
         if let currentUserID = UserDefaults.standard.object(forKey: "user_uid_key") as? String {
-            db.collection("users").document(currentUserID).collection("userContacts").getDocuments { [self] (snapshot, err) in
+            db.collection("users").document(currentUserID).collection("userContacts").whereField("id", isEqualTo: id).getDocuments { [self] (snapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {
-                    let exists: Bool = ((snapshot?.isEmpty) != nil)
+                    let count: Int = snapshot!.count
                     
-                    if (exists) {
+                    if (count != 0) {
                         addButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
+                    }
+                    else {
+                        addButton.setImage(UIImage(systemName: "plus"), for: .normal)
                     }
                 }
             }
