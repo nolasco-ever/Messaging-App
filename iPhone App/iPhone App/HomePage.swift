@@ -9,6 +9,11 @@ import UIKit
 import FirebaseFirestore
 
 class HomePage: UIViewController {
+    
+    @IBOutlet weak var userButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    
+    
     let db = Firestore.firestore()
 
     override func viewDidLoad() {
@@ -17,15 +22,20 @@ class HomePage: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func goToUserPage(_ sender: Any) {
+        guard let userPageVC = storyboard?.instantiateViewController(withIdentifier: "user_profile_vc") as? UserProfile else { return }
+        
+        userPageVC.modalPresentationStyle = .fullScreen
+        
+        present(userPageVC, animated: true)
     }
-    */
-
+    
+    @IBAction func goToSearchPage(_ sender: Any) {
+        guard let searchPageVC = storyboard?.instantiateViewController(withIdentifier: "search_page_vc") as? SearchPage else { return }
+        
+        searchPageVC.modalPresentationStyle = .fullScreen
+        
+        present(searchPageVC, animated: true)
+    }
+    
 }

@@ -18,6 +18,7 @@
 		5A1E75F32771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */; };
 		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
 		5A8BB1B62777CC6200B23F96 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BB1B52777CC6200B23F96 /* Avatars.swift */; };
+		5A9E773C27794E2E001F736B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E773B27794E2E001F736B /* UserProfile.swift */; };
 		5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */; };
 		5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDC2771AB1F00078665 /* HomePage.swift */; };
 		5A9F8BDF2771AEF800078665 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F8BDE2771AEF800078665 /* GoogleService-Info.plist */; };
@@ -62,6 +63,7 @@
 		5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		5A8BB1B52777CC6200B23F96 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
+		5A9E773B27794E2E001F736B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		5A9F8BDA2771AADA00078665 /* AvatarSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelection.swift; sourceTree = "<group>"; };
 		5A9F8BDC2771AB1F00078665 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		5A9F8BDE2771AEF800078665 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				5AB188A627768E4300C3BF3D /* SearchPage.swift */,
 				5AB188A82776BFAD00C3BF3D /* AvatarCell.swift */,
 				5A8BB1B52777CC6200B23F96 /* Avatars.swift */,
+				5A9E773B27794E2E001F736B /* UserProfile.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				5A1E75D42771797A002BEA30 /* LoginPage.swift in Sources */,
 				5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */,
+				5A9E773C27794E2E001F736B /* UserProfile.swift in Sources */,
 				5AB188A92776BFAD00C3BF3D /* AvatarCell.swift in Sources */,
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
