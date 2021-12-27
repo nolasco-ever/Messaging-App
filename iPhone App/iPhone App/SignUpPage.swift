@@ -53,8 +53,9 @@ class SignUpPage: UIViewController {
     }
     
     func signUp(name: String, email: String, password: String){
-        auth.createUser(withEmail: email, password: password){ result, error in
+        auth.createUser(withEmail: email, password: password){ [self] result, error in
             guard result != nil, error == nil else{
+                print("SIGN UP RESULT: \(String(describing: error))")
                 return
             }
             
@@ -66,6 +67,17 @@ class SignUpPage: UIViewController {
                 "id": id,
                 "name": name,
                 "email": email])
+            
+            signIn(email: email, password: password)
+        }
+    }
+    
+    func signIn(email: String, password: String){
+        auth.signIn(withEmail: email, password: password){ [weak self] result, error in
+            guard self != nil else { return }
+            
+            UserDefaults.standard.set(result?.user.uid, forKey: "user_uid_key")
+            UserDefaults.standard.synchronize()
         }
     }
 }
