@@ -28,7 +28,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-fS-WuY">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="28.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -47,20 +47,24 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlY-JZ-vZQ">
                                         <rect key="frame" x="0.0" y="0.0" width="305" height="49"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="DarkBlue"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="8oD-LJ-wvM"/>
                                             <constraint firstAttribute="width" constant="305" id="Jhu-tj-ve8"/>
                                         </constraints>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fS-ug-fDn">
                                         <rect key="frame" x="0.0" y="59.999999999999943" width="305" height="49"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="DarkBlue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="305" id="INX-dz-uuZ"/>
                                             <constraint firstAttribute="height" constant="49" id="N2S-yK-JVq"/>
                                         </constraints>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>

@@ -34,7 +34,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A72-hx-JVI">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -59,6 +59,9 @@
     </scenes>
     <resources>
         <image name="earth-logo" width="375" height="375"/>
+        <namedColor name="DarkBlue">
+            <color red="0.070588235294117646" green="0.17254901960784313" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Yellow">
             <color red="0.99607843137254903" green="0.9882352941176471" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
