@@ -58,7 +58,8 @@ class UserSearchCell: UITableViewCell {
             db.collection("users").document(currentUserID).collection("userContacts").document(self.id).setData([
                 "id": id,
                 "name": name!,
-                "email": email!])
+                "email": email!,
+                "conversation": false])
         }
     }
     
