@@ -31,6 +31,16 @@ class SearchPage: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backToHome(_ sender: Any) {
+        //navigate to homepage
+        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else { return }
+        
+        homepageVC.modalPresentationStyle = .fullScreen
+        
+        present(homepageVC, animated: true)
+    }
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("return pressed")
         searchTextField.resignFirstResponder()

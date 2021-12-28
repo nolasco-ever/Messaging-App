@@ -40,16 +40,11 @@ class AvatarSelection: UIViewController {
                 //append all avatar links to avatarArray
                 for doc in querySnapshot!.documents{
                     let link = doc.get("link") as! String
-                    print("DOCUMENT RESULT: \(link)")
                     avatarArray.append(link)
                     
                     let indexPath = IndexPath(row: avatarArray.count-1, section: 0)
                     avatarCollectionView.insertItems(at: [indexPath])
                 }
-
-                print("AVATAR ARRAY: \(avatarArray[selectedCell])")
-                
-                selectedAvatarLink = avatarArray[selectedCell]
             }
         }
         
@@ -101,6 +96,8 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
         cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
         
         selectedCell = indexPath.row
+        selectedAvatarLink = avatarArray[selectedCell]
+        
         print(avatarArray[indexPath.row])
     }
     

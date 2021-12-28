@@ -16,6 +16,7 @@ class UserProfile: UIViewController {
     @IBOutlet weak var emailTextView: UILabel!
     @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var editProfilePictureButton: UIButton!
     
     let db = Firestore.firestore()
     
@@ -43,6 +44,15 @@ class UserProfile: UIViewController {
         }
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func goToAvatarSelection(_ sender: Any) {
+        //navigate to avatar selection page
+        guard let avatarSelectionVC = storyboard?.instantiateViewController(withIdentifier: "avatar_selection") as? AvatarSelection else { return }
+
+        avatarSelectionVC.modalPresentationStyle = .fullScreen
+
+        present(avatarSelectionVC, animated: true)
     }
     
     @IBAction func signOut(_ sender: Any) {

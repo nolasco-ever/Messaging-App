@@ -17,6 +17,8 @@
 		5A1E75F12771797A002BEA30 /* iPhone_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */; };
 		5A1E75F32771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */; };
 		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
+		5A6281AA277AF7370058C20E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6281A9277AF7370058C20E /* ConversationCell.swift */; };
+		5A6281AC277AF83D0058C20E /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6281AB277AF83D0058C20E /* Conversation.swift */; };
 		5A8BB1B62777CC6200B23F96 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BB1B52777CC6200B23F96 /* Avatars.swift */; };
 		5A9E773C27794E2E001F736B /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E773B27794E2E001F736B /* UserProfile.swift */; };
 		5A9E773E277967F8001F736B /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E773D277967F7001F736B /* UserSearchCell.swift */; };
@@ -64,6 +66,8 @@
 		5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITests.swift; sourceTree = "<group>"; };
 		5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		5A6281A9277AF7370058C20E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		5A6281AB277AF83D0058C20E /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		5A8BB1B52777CC6200B23F96 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
 		5A9E773B27794E2E001F736B /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		5A9E773D277967F7001F736B /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				5A9E773B27794E2E001F736B /* UserProfile.swift */,
 				5A9E773D277967F7001F736B /* UserSearchCell.swift */,
 				5A9E773F277968CC001F736B /* UserContactSearch.swift */,
+				5A6281A9277AF7370058C20E /* ConversationCell.swift */,
+				5A6281AB277AF83D0058C20E /* Conversation.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -310,10 +316,12 @@
 				5A9F8BDD2771AB1F00078665 /* HomePage.swift in Sources */,
 				5A9E773C27794E2E001F736B /* UserProfile.swift in Sources */,
 				5AB188A92776BFAD00C3BF3D /* AvatarCell.swift in Sources */,
+				5A6281AC277AF83D0058C20E /* Conversation.swift in Sources */,
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
 				5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */,
 				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,
+				5A6281AA277AF7370058C20E /* ConversationCell.swift in Sources */,
 				5A9E773E277967F8001F736B /* UserSearchCell.swift in Sources */,
 				5A8BB1B62777CC6200B23F96 /* Avatars.swift in Sources */,
 				5A1E75D22771797A002BEA30 /* SceneDelegate.swift in Sources */,
