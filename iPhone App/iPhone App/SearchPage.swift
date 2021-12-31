@@ -27,17 +27,15 @@ class SearchPage: UIViewController, UITextFieldDelegate {
         searchTextField.delegate = self
         
         searchTextField.layer.cornerRadius = CGFloat(radius)
+        
+        //label needs to be blank when no query has been made
+        showingResultsLabel.text = ""
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func backToHome(_ sender: Any) {
-        //navigate to homepage
-        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else { return }
-        
-        homepageVC.modalPresentationStyle = .fullScreen
-        
-        present(homepageVC, animated: true)
+        present(Functions.goToHomePage(storyboard: storyboard!), animated: true)
     }
     
     
@@ -57,13 +55,14 @@ class SearchPage: UIViewController, UITextFieldDelegate {
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
-                for doc in snapshot!.documents {                    let name = doc.get("name") as? String
+                for doc in snapshot!.documents {
+                    let name = doc.get("name") as? String
                     
                     if name!.contains(query!){
                         let imageURL = doc.get("image") as? String
                         
                         let id = doc.get("id") as? String
-                        let image = getImageFromUrl(from: imageURL!)
+                        let image = Functions.getImageFromUrl(from: imageURL!)
                         let email = doc.get("email") as? String
                         
                         let user = UserContactSearch(id: id!, image: image, name: name!, email: email!)
@@ -78,17 +77,6 @@ class SearchPage: UIViewController, UITextFieldDelegate {
         }
         
         showingResultsLabel.text = "Showing results for: '\(query ?? "")'"
-    }
-    
-    func getImageFromUrl(from url: String) -> UIImage{
-        let imageURL = URL(string: url)
-        
-        //avoid causing a deadlock in the UI
-        let imageData = try? Data(contentsOf: imageURL!)
-        
-        let image = UIImage(data: imageData!)!
-        
-        return image
     }
 
 }

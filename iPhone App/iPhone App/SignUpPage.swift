@@ -22,11 +22,27 @@ class SignUpPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+           NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         fullNameTextField.layer.cornerRadius = CGFloat(radius)
         usernameTextField.layer.cornerRadius = CGFloat(radius)
         passwordTextField.layer.cornerRadius = CGFloat(radius)
         signUpButton.layer.cornerRadius = CGFloat(radius)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
     @IBAction func createUser(_ sender: Any) {
@@ -37,19 +53,11 @@ class SignUpPage: UIViewController {
         signUp(name: name, email: email, password: password)
         
         //navigate to avatar selection page
-        guard let avatarSelectionVC = storyboard?.instantiateViewController(withIdentifier: "avatar_selection") as? AvatarSelection else { return }
-        
-        avatarSelectionVC.modalPresentationStyle = .fullScreen
-        
-        present(avatarSelectionVC, animated: true)
+        goToAvatarSelection()
     }
     
     @IBAction func goBack(_ sender: Any) {
-        guard let loginVC = storyboard?.instantiateViewController(withIdentifier: "login_vc") as? LoginPage else { return }
-        
-        loginVC.modalPresentationStyle = .fullScreen
-        
-        present(loginVC, animated: true)
+        present(Functions.goToLogin(storyboard: storyboard!), animated: true)
     }
     
     func signUp(name: String, email: String, password: String){
@@ -68,16 +76,11 @@ class SignUpPage: UIViewController {
                 "name": name,
                 "email": email])
             
-            signIn(email: email, password: password)
+            Functions.signIn(email: email, password: password, auth: auth)
         }
     }
     
-    func signIn(email: String, password: String){
-        auth.signIn(withEmail: email, password: password){ [weak self] result, error in
-            guard self != nil else { return }
-            
-            UserDefaults.standard.set(result?.user.uid, forKey: "user_uid_key")
-            UserDefaults.standard.synchronize()
-        }
+    func goToAvatarSelection(){
+        present(Functions.goToAvatarSelection(storyboard: storyboard!), animated: true)
     }
 }

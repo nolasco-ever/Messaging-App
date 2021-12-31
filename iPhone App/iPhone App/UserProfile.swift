@@ -32,7 +32,7 @@ class UserProfile: UIViewController {
                     let email = data?["email"] ?? ""
                     let imageUrl = data?["image"] ?? ""
                     
-                    let image = getImageFromUrl(from: imageUrl as! String)
+                    let image = Functions.getImageFromUrl(from: imageUrl as! String)
                     
                     fullNameTextView.text = name as? String
                     emailTextView.text = email as? String
@@ -48,11 +48,7 @@ class UserProfile: UIViewController {
     
     @IBAction func goToAvatarSelection(_ sender: Any) {
         //navigate to avatar selection page
-        guard let avatarSelectionVC = storyboard?.instantiateViewController(withIdentifier: "avatar_selection") as? AvatarSelection else { return }
-
-        avatarSelectionVC.modalPresentationStyle = .fullScreen
-
-        present(avatarSelectionVC, animated: true)
+        present(Functions.goToAvatarSelection(storyboard: storyboard!), animated: true)
     }
     
     @IBAction func signOut(_ sender: Any) {
@@ -64,35 +60,15 @@ class UserProfile: UIViewController {
             print("Error signing out: \(err)")
         }
         
-        UserDefaults.standard.set(nil, forKey: "user_uid_key")
-        UserDefaults.standard.synchronize()
+        Functions.setUserDefaultsUID(id: nil)
         
-        //go to login pagge
-        guard let loginPageVC = storyboard?.instantiateViewController(withIdentifier: "login_vc") as? LoginPage else { return }
-        
-        loginPageVC.modalPresentationStyle = .fullScreen
-        
-        present(loginPageVC, animated: true)
+        //go to login page
+        present(Functions.goToLogin(storyboard: storyboard!), animated: true)
     }
     
     @IBAction func backToHome(_ sender: Any) {
         //navigate to homepage
-        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else { return }
-        
-        homepageVC.modalPresentationStyle = .fullScreen
-        
-        present(homepageVC, animated: true)
-    }
-    
-    func getImageFromUrl(from url: String) -> UIImage{
-        let imageURL = URL(string: url)
-        
-        //avoid causing a deadlock in the UI
-        let imageData = try? Data(contentsOf: imageURL!)
-        
-        let image = UIImage(data: imageData!)!
-        
-        return image
+        present(Functions.goToHomePage(storyboard: storyboard!), animated: true)
     }
 
 }

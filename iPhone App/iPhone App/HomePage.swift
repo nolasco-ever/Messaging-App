@@ -47,7 +47,7 @@ class HomePage: UIViewController {
                                 let name = data?["name"] ?? ""
                                 let imageUrl = data?["image"] ?? ""
                                 
-                                let image = getImageFromUrl(from: imageUrl as! String)
+                                let image = Functions.getImageFromUrl(from: imageUrl as! String)
                                 
                                 let conversation = Conversation(id: id!, image: image, name: name as! String, lastMessage: lastMessage)
                                 
@@ -64,30 +64,11 @@ class HomePage: UIViewController {
     }
     
     @IBAction func goToUserPage(_ sender: Any) {
-        guard let userPageVC = storyboard?.instantiateViewController(withIdentifier: "user_profile_vc") as? UserProfile else { return }
-        
-        userPageVC.modalPresentationStyle = .fullScreen
-        
-        present(userPageVC, animated: true)
+        present(Functions.goToUserProfile(storyboard: storyboard!), animated: true)
     }
     
     @IBAction func goToSearchPage(_ sender: Any) {
-        guard let searchPageVC = storyboard?.instantiateViewController(withIdentifier: "search_page_vc") as? SearchPage else { return }
-        
-        searchPageVC.modalPresentationStyle = .fullScreen
-        
-        present(searchPageVC, animated: true)
-    }
-    
-    func getImageFromUrl(from url: String) -> UIImage{
-        let imageURL = URL(string: url)
-        
-        //avoid causing a deadlock in the UI
-        let imageData = try? Data(contentsOf: imageURL!)
-        
-        let image = UIImage(data: imageData!)!
-        
-        return image
+        present(Functions.goToSearchPage(storyboard: storyboard!), animated: true)
     }
     
 }

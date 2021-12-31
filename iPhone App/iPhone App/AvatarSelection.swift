@@ -58,11 +58,7 @@ class AvatarSelection: UIViewController {
         }
         
         //navigate to homepage
-        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else { return }
-        
-        homepageVC.modalPresentationStyle = .fullScreen
-        
-        present(homepageVC, animated: true)
+        present(Functions.goToHomePage(storyboard: storyboard!), animated: true)
     }
     
 
@@ -81,7 +77,7 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = avatarCollectionView.dequeueReusableCell(withReuseIdentifier: AvatarCell.identifier, for: indexPath) as! AvatarCell
         
-        cell.avatarImageView.image = getImageFromUrl(from: avatarArray[indexPath.row])
+        cell.avatarImageView.image = Functions.getImageFromUrl(from: avatarArray[indexPath.row])
         
         //make sure image is round
         cell.layer.cornerRadius = cell.frame.height / 2
@@ -99,17 +95,6 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
         selectedAvatarLink = avatarArray[selectedCell]
         
         print(avatarArray[indexPath.row])
-    }
-    
-    func getImageFromUrl(from url: String) -> UIImage{
-        let imageURL = URL(string: url)
-        
-        //avoid causing a deadlock in the UI
-        let imageData = try? Data(contentsOf: imageURL!)
-        
-        let image = UIImage(data: imageData!)!
-        
-        return image
     }
     
 }

@@ -21,6 +21,8 @@ class LoginPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+           NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         userTextField.layer.cornerRadius = CGFloat(radius)
         passwordTextField.layer.cornerRadius = CGFloat(radius)
@@ -40,40 +42,35 @@ class LoginPage: UIViewController {
         }
     }
     
-    @IBAction func goToSignup() {
-        guard let signUpVC = storyboard?.instantiateViewController(withIdentifier: "sign_up_vc") as? SignUpPage else{
-            return
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
         }
-        
-        signUpVC.modalPresentationStyle = .fullScreen
-                
-        present(signUpVC, animated: true)
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @IBAction func goToSignup() {
+        present(Functions.goToSignUpPage(storyboard: storyboard!), animated: true)
     }
     
     @IBAction func loginUser() {
         let email: String = userTextField.text!
         let password: String = passwordTextField.text!
         
-        signIn(email: email, password: password)
+        Functions.signIn(email: email, password: password, auth: auth)
         
         goToHomePage()
     }
     
-    func signIn(email: String, password: String){
-        auth.signIn(withEmail: email, password: password){ [weak self] result, error in
-            guard self != nil else { return }
-            
-            UserDefaults.standard.set(result?.user.uid, forKey: "user_uid_key")
-            UserDefaults.standard.synchronize()
-        }
-    }
-    
     func goToHomePage(){
-        guard let homepageVC = storyboard?.instantiateViewController(withIdentifier: "homepage_vc") as? HomePage else{ return }
-        
-        homepageVC.modalPresentationStyle = .fullScreen
-        
-        present(homepageVC, animated: true)
+        present(Functions.goToHomePage(storyboard: storyboard!), animated: true)
     }
 }
 

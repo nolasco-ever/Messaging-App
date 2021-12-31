@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,7 +27,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-fS-WuY">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="28.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <color key="textColor" name="DarkBlue"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -151,7 +150,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p5U-cF-ZKj">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="28.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -216,7 +215,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iqu-Xq-EQs">
-                                <rect key="frame" x="155" y="775" width="79.666666666666686" height="42.666666666666629"/>
+                                <rect key="frame" x="155.33333333333334" y="775" width="79.666666666666657" height="42.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94f-FK-HUQ">
                                         <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="42.666666666666664"/>
@@ -236,16 +235,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="HVH-6x-Cpy" secondAttribute="trailing" constant="136" id="3c6-ok-H1u"/>
                             <constraint firstItem="KoU-PN-PWH" firstAttribute="top" secondItem="HVH-6x-Cpy" secondAttribute="bottom" constant="1.3333333333333286" id="4SP-cL-mKA"/>
-                            <constraint firstItem="iqu-Xq-EQs" firstAttribute="leading" secondItem="SKi-1A-3c2" secondAttribute="leading" constant="155" id="BMh-ib-ds5"/>
                             <constraint firstItem="KoU-PN-PWH" firstAttribute="leading" secondItem="SKi-1A-3c2" secondAttribute="leading" constant="8" id="FVP-d3-cS3"/>
                             <constraint firstItem="JYr-G1-rXe" firstAttribute="leading" secondItem="SKi-1A-3c2" secondAttribute="leading" constant="42" id="OAz-CF-aGp"/>
                             <constraint firstAttribute="bottom" secondItem="iqu-Xq-EQs" secondAttribute="bottom" constant="26.329999999999998" id="RuF-bk-4wc"/>
                             <constraint firstItem="HVH-6x-Cpy" firstAttribute="leading" secondItem="SKi-1A-3c2" secondAttribute="leading" constant="135" id="UtF-BC-xU6"/>
                             <constraint firstAttribute="trailing" secondItem="JYr-G1-rXe" secondAttribute="trailing" constant="43" id="W9e-7B-5rr"/>
-                            <constraint firstAttribute="trailing" secondItem="iqu-Xq-EQs" secondAttribute="trailing" constant="155.33000000000001" id="Yw7-be-EJ7"/>
                             <constraint firstItem="JYr-G1-rXe" firstAttribute="top" secondItem="KoU-PN-PWH" secondAttribute="bottom" id="ayq-JU-X8j"/>
                             <constraint firstItem="HVH-6x-Cpy" firstAttribute="top" secondItem="MFP-uO-UPX" secondAttribute="bottom" constant="25" id="kGN-iA-hXN"/>
                             <constraint firstAttribute="trailing" secondItem="KoU-PN-PWH" secondAttribute="trailing" constant="7" id="r4B-c8-8ft"/>
+                            <constraint firstItem="iqu-Xq-EQs" firstAttribute="centerX" secondItem="SKi-1A-3c2" secondAttribute="centerX" id="zvi-Ug-Vdj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XuY-3H-of1"/>
@@ -285,7 +283,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fyc-4c-yo8">
                                         <rect key="frame" x="54" y="0.0" width="119" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -296,7 +294,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vBT-Wg-ycs">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="19.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -412,7 +410,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-kR-7SU">
                                         <rect key="frame" x="54" y="0.0" width="119" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -423,7 +421,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSN-sS-1pU">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -446,7 +444,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Full Name]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vkA-mU-pFu">
                                                     <rect key="frame" x="95" y="8" width="285" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="TextBlack"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-jB-Dhf">
@@ -462,7 +460,7 @@
                                                         <constraint firstAttribute="height" constant="42" id="Mk3-i4-jgj"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="TextBlack"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -478,6 +476,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="39q-Hx-pAi" secondAttribute="bottom" constant="8" id="wsD-qZ-qki"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundWhite"/>
                                         <connections>
                                             <outlet property="lastMessageLabel" destination="39q-Hx-pAi" id="VXQ-wt-zAD"/>
                                             <outlet property="userImageConversation" destination="IM4-jB-Dhf" id="YT0-Ym-Fan"/>
@@ -580,7 +579,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hH5-TX-jRC">
                                         <rect key="frame" x="54" y="0.0" width="119" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -591,13 +590,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-Ng-Vdc">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-0E-niW">
                                         <rect key="frame" x="0.0" y="58" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="DarkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -664,7 +663,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundWhite"/>
                         <constraints>
                             <constraint firstItem="22V-TY-wUd" firstAttribute="top" secondItem="2hc-QD-tt5" secondAttribute="bottom" id="2G3-Az-I4O"/>
                             <constraint firstItem="cCf-4X-qnk" firstAttribute="top" secondItem="Lu2-eb-SFR" secondAttribute="bottom" id="79p-RS-eBS"/>
@@ -719,7 +718,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EarthChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-Z3-bgy">
                                         <rect key="frame" x="54" y="0.0" width="119" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -729,7 +728,8 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search user..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckl-Fn-D8e">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="35"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" name="Grey"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -774,13 +774,13 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ec-9t-Ibk">
                                                             <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="24"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" name="TextBlack"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-qf-tD5">
                                                             <rect key="frame" x="0.0" y="30.999999999999993" width="51.333333333333336" height="21.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" name="TextBlack"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -810,6 +810,7 @@
                                                 <constraint firstItem="m4v-sl-0il" firstAttribute="centerY" secondItem="OJr-eZ-s1t" secondAttribute="centerY" id="kIU-oe-Idc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundWhite"/>
                                         <connections>
                                             <outlet property="addButton" destination="m4v-sl-0il" id="17G-ML-GXQ"/>
                                             <outlet property="userEmailLabel" destination="ie9-qf-tD5" id="tu3-Kc-CfA"/>
@@ -824,7 +825,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vek-z3-KFx">
                                         <rect key="frame" x="0.0" y="0.0" width="59.333333333333336" height="32"/>
-                                        <color key="tintColor" name="DarkBlue"/>
+                                        <color key="tintColor" name="TextBlack"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Back">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -884,17 +885,17 @@
         <namedColor name="DarkGreen">
             <color red="0.28235294117647058" green="0.83921568627450982" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Grey">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="LightBlue">
             <color red="0.16470588235294117" green="0.43529411764705883" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlack">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Yellow">
             <color red="0.99607843137254903" green="0.9882352941176471" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
