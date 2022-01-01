@@ -915,7 +915,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-3D-2bQ">
                                 <rect key="frame" x="20.666666666666657" y="760" width="349" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GY2-ik-8f8">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GY2-ik-8f8">
                                         <rect key="frame" x="0.0" y="0.0" width="291" height="50"/>
                                         <color key="backgroundColor" name="Grey"/>
                                         <constraints>
@@ -937,6 +937,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="arrow.up" catalog="system" cornerStyle="capsule">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" weight="heavy"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="SiS-AB-ddk" eventType="touchUpInside" id="xXn-j2-cLs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -961,6 +964,9 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="LMW-Ef-O9D" id="eva-Kg-q51"/>
+                        <outlet property="contactAvatarImageView" destination="Dhg-3L-1tV" id="t9X-K9-zhz"/>
+                        <outlet property="fullNameLabel" destination="sWY-Pc-37l" id="uSP-Pt-NXu"/>
+                        <outlet property="messageTextField" destination="GY2-ik-8f8" id="eE0-Ek-lYj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzU-Pn-vBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

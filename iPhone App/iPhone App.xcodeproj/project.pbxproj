@@ -19,6 +19,7 @@
 		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
 		5A5C2AC3277FB3AA00C9061C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC2277FB3AA00C9061C /* Functions.swift */; };
 		5A5C2AC5277FCE3E00C9061C /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */; };
+		5A5C2AC9277FE87900C9061C /* ChatVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC8277FE87900C9061C /* ChatVariables.swift */; };
 		5A6281AA277AF7370058C20E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6281A9277AF7370058C20E /* ConversationCell.swift */; };
 		5A6281AC277AF83D0058C20E /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6281AB277AF83D0058C20E /* Conversation.swift */; };
 		5A8BB1B62777CC6200B23F96 /* Avatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BB1B52777CC6200B23F96 /* Avatars.swift */; };
@@ -70,6 +71,7 @@
 		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		5A5C2AC2277FB3AA00C9061C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
+		5A5C2AC8277FE87900C9061C /* ChatVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVariables.swift; sourceTree = "<group>"; };
 		5A6281A9277AF7370058C20E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		5A6281AB277AF83D0058C20E /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		5A8BB1B52777CC6200B23F96 /* Avatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatars.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				5A6281AB277AF83D0058C20E /* Conversation.swift */,
 				5A5C2AC2277FB3AA00C9061C /* Functions.swift */,
 				5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */,
+				5A5C2AC8277FE87900C9061C /* ChatVariables.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
 				5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */,
 				5A5C2AC3277FB3AA00C9061C /* Functions.swift in Sources */,
+				5A5C2AC9277FE87900C9061C /* ChatVariables.swift in Sources */,
 				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,
 				5A6281AA277AF7370058C20E /* ConversationCell.swift in Sources */,
 				5A9E773E277967F8001F736B /* UserSearchCell.swift in Sources */,

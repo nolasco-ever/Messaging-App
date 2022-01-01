@@ -10,12 +10,14 @@ import UIKit
 
 class Conversation {
     var id: String
+    var convoID: String
     var image: UIImage
     var name: String
     var lastMessage: String
     
-    init(id: String, image: UIImage, name: String, lastMessage: String){
+    init(convoID: String, id: String, image: UIImage, name: String, lastMessage: String){
         self.id = id
+        self.convoID = convoID
         self.image = image
         self.name = name
         self.lastMessage = lastMessage

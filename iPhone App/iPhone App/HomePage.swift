@@ -31,6 +31,7 @@ class HomePage: UIViewController {
                 } else {
                     for doc in snapshot!.documents {
                         let id = doc.get("id") as? String
+                        let convoID = doc.get("convoID") as? String
                         var lastMessage: String = ""
                         
                         if (doc.get("conversation")! as! Bool == false){
@@ -49,7 +50,7 @@ class HomePage: UIViewController {
                                 
                                 let image = Functions.getImageFromUrl(from: imageUrl as! String)
                                 
-                                let conversation = Conversation(id: id!, image: image, name: name as! String, lastMessage: lastMessage)
+                                let conversation = Conversation(convoID: convoID!, id: id!, image: image, name: name as! String, lastMessage: lastMessage)
                                 
                                 conversations.append(conversation)
                                 
@@ -89,6 +90,22 @@ extension HomePage: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let path = conversationsTableView.indexPathForSelectedRow
+        
+        let currentCell = conversationsTableView.cellForRow(at: path!)! as! ConversationCell
+        
+        let contactID = currentCell.contactID
+        let convoID = currentCell.convoID
+        let name = currentCell.userNameConversation.text
+        let image = currentCell.userImageConversation.image
+        
+        ChatVariables.contactID = contactID
+        ChatVariables.contactName = name!
+        ChatVariables.contactImage = image
+        ChatVariables.convoID = convoID
+        
+        
+        
         present(Functions.goToChatPage(storyboard: storyboard!), animated: true)
     }
 }

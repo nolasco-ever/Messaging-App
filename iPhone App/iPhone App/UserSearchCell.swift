@@ -55,11 +55,14 @@ class UserSearchCell: UITableViewCell {
         let email = userEmailLabel.text
         
         if let currentUserID = UserDefaults.standard.object(forKey: "user_uid_key") as? String {
+            let convoID = currentUserID + id
+            
             db.collection("users").document(currentUserID).collection("userContacts").document(self.id).setData([
                 "id": id,
                 "name": name!,
                 "email": email!,
-                "conversation": false])
+                "conversation": false,
+                "convoID": convoID])
         }
     }
     
