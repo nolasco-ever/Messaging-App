@@ -21,5 +21,4 @@ class ConversationCell: UITableViewCell {
         userNameConversation.text = conversation.name
         lastMessageLabel.text = conversation.lastMessage
     }
-
 }

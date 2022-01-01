@@ -88,5 +88,7 @@ extension HomePage: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        present(Functions.goToChatPage(storyboard: storyboard!), animated: true)
+    }
 }

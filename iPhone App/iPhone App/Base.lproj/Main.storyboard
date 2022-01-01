@@ -866,8 +866,111 @@
             </objects>
             <point key="canvasLocation" x="2693.8461538461538" y="82.464454976303315"/>
         </scene>
+        <!--Chat Page-->
+        <scene sceneID="hwf-rK-w8J">
+            <objects>
+                <viewController storyboardIdentifier="chat_page_vc" id="SiS-AB-ddk" customClass="ChatPage" customModule="iPhone_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t5y-nQ-KiA"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCH-Lc-0OI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IxH-0p-8yq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bM2-Js-KbH">
+                                <rect key="frame" x="29.999999999999996" y="69" width="54.666666666666657" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-Ef-O9D">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="50"/>
+                                        <color key="tintColor" name="TextBlack"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" weight="heavy"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goToHomePage:" destination="SiS-AB-ddk" eventType="touchUpInside" id="oJ5-AK-6my"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="5yx-Wk-SN7">
+                                <rect key="frame" x="106" y="69" width="178" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Dhg-3L-1tV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="UZj-W8-TZh"/>
+                                            <constraint firstAttribute="height" constant="50" id="zox-SH-M4k"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Full Name]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWY-Pc-37l">
+                                        <rect key="frame" x="69" y="0.0" width="109" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" name="TextBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-3D-2bQ">
+                                <rect key="frame" x="20.666666666666657" y="760" width="349" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GY2-ik-8f8">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="50"/>
+                                        <color key="backgroundColor" name="Grey"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GGu-aL-5NO"/>
+                                            <constraint firstAttribute="width" constant="291" id="bhX-0f-M0P"/>
+                                        </constraints>
+                                        <color key="textColor" name="TextBlack"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DR-Kg-fod">
+                                        <rect key="frame" x="299" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="A4L-Yd-RwI"/>
+                                            <constraint firstAttribute="height" constant="50" id="cxR-bv-G2G"/>
+                                        </constraints>
+                                        <color key="tintColor" name="DarkBlue"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.up" catalog="system" cornerStyle="capsule">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" weight="heavy"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EZC-Ge-22I">
+                                <rect key="frame" x="0.0" y="129" width="390" height="621"/>
+                                <color key="backgroundColor" name="BackgroundWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundWhite"/>
+                        <constraints>
+                            <constraint firstItem="I7c-3D-2bQ" firstAttribute="centerX" secondItem="IxH-0p-8yq" secondAttribute="centerX" id="2Li-z9-ma3"/>
+                            <constraint firstItem="I7c-3D-2bQ" firstAttribute="top" secondItem="EZC-Ge-22I" secondAttribute="bottom" constant="10" id="Ef4-RD-bTa"/>
+                            <constraint firstItem="bM2-Js-KbH" firstAttribute="top" secondItem="t5y-nQ-KiA" secondAttribute="bottom" constant="25" id="Him-Vs-h1k"/>
+                            <constraint firstItem="pCH-Lc-0OI" firstAttribute="top" secondItem="I7c-3D-2bQ" secondAttribute="bottom" id="KDH-HJ-lB3"/>
+                            <constraint firstItem="bM2-Js-KbH" firstAttribute="leading" secondItem="IxH-0p-8yq" secondAttribute="leading" constant="30" id="KiK-0K-ndx"/>
+                            <constraint firstItem="5yx-Wk-SN7" firstAttribute="centerX" secondItem="IxH-0p-8yq" secondAttribute="centerX" id="TMe-rQ-wHe"/>
+                            <constraint firstItem="EZC-Ge-22I" firstAttribute="leading" secondItem="IxH-0p-8yq" secondAttribute="leading" id="Zkf-wj-oxv"/>
+                            <constraint firstAttribute="trailing" secondItem="EZC-Ge-22I" secondAttribute="trailing" id="apG-c4-ydf"/>
+                            <constraint firstItem="EZC-Ge-22I" firstAttribute="top" secondItem="bM2-Js-KbH" secondAttribute="bottom" constant="10" id="hlx-jp-6D5"/>
+                            <constraint firstItem="5yx-Wk-SN7" firstAttribute="top" secondItem="t5y-nQ-KiA" secondAttribute="bottom" constant="25" id="xOF-aF-vIi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="LMW-Ef-O9D" id="eva-Kg-q51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzU-Pn-vBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3641.5384615384614" y="61.848341232227483"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="earth-logo" width="375" height="375"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pencil" catalog="system" width="128" height="113"/>

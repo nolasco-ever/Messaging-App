@@ -53,6 +53,10 @@ class Functions {
         return createViewController(identifier: "homepage_vc", storyboard: storyboard)
     }
     
+    static func goToChatPage(storyboard: UIStoryboard) -> UIViewController{
+        return createViewController(identifier: "chat_page_vc", storyboard: storyboard)
+    }
+    
     static func goToAvatarSelection(storyboard: UIStoryboard) -> UIViewController{
         return createViewController(identifier: "avatar_selection", storyboard: storyboard)
     }
