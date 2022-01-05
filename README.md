@@ -1,2 +1,2 @@
 # Messaging-App
-Multi-platform messaging application
+iOS messaging application
