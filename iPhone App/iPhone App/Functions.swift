@@ -76,4 +76,14 @@ class Functions {
     static func goToSignUpPage(storyboard: UIStoryboard) -> UIViewController{
         return createViewController(identifier: "sign_up_vc", storyboard: storyboard)
     }
+    
+    //set placeholder colors
+    static func setPlaceholderColor(textField: UITextField){
+        //set placeholder color
+        let color = UIColor.lightGray
+        
+        let placeholder = textField.placeholder ?? ""
+        
+        textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : color])
+    }
 }

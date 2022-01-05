@@ -51,7 +51,7 @@
                                             <constraint firstAttribute="height" constant="49" id="8oD-LJ-wvM"/>
                                             <constraint firstAttribute="width" constant="305" id="Jhu-tj-ve8"/>
                                         </constraints>
-                                        <color key="textColor" name="DarkBlue"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -63,7 +63,7 @@
                                             <constraint firstAttribute="width" constant="305" id="INX-dz-uuZ"/>
                                             <constraint firstAttribute="height" constant="49" id="N2S-yK-JVq"/>
                                         </constraints>
-                                        <color key="textColor" name="DarkBlue"/>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
@@ -165,6 +165,7 @@
                                             <constraint firstAttribute="height" constant="49" id="hxf-H1-ywj"/>
                                             <constraint firstAttribute="width" constant="305" id="tUA-nV-5wP"/>
                                         </constraints>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -175,6 +176,7 @@
                                             <constraint firstAttribute="width" constant="305" id="5Wg-lP-v63"/>
                                             <constraint firstAttribute="height" constant="49" id="Nh4-Nd-40o"/>
                                         </constraints>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -185,6 +187,7 @@
                                             <constraint firstAttribute="width" constant="305" id="AKt-kU-L3v"/>
                                             <constraint firstAttribute="height" constant="49" id="V5V-7y-6jw"/>
                                         </constraints>
+                                        <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -728,7 +731,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search user..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckl-Fn-D8e">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="35"/>
-                                        <color key="backgroundColor" name="Grey"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" name="TextBlack"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -913,13 +916,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-3D-2bQ">
-                                <rect key="frame" x="20.666666666666657" y="760" width="349" height="50"/>
+                                <rect key="frame" x="25.666666666666657" y="770" width="339" height="40"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GY2-ik-8f8">
-                                        <rect key="frame" x="0.0" y="0.0" width="291" height="50"/>
-                                        <color key="backgroundColor" name="Grey"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Send a message..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GY2-ik-8f8">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="GGu-aL-5NO"/>
+                                            <constraint firstAttribute="height" constant="40" id="GGu-aL-5NO"/>
                                             <constraint firstAttribute="width" constant="291" id="bhX-0f-M0P"/>
                                         </constraints>
                                         <color key="textColor" name="TextBlack"/>
@@ -927,10 +930,10 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DR-Kg-fod">
-                                        <rect key="frame" x="299" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="299" y="0.0" width="40" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="A4L-Yd-RwI"/>
-                                            <constraint firstAttribute="height" constant="50" id="cxR-bv-G2G"/>
+                                            <constraint firstAttribute="width" constant="40" id="A4L-Yd-RwI"/>
+                                            <constraint firstAttribute="height" constant="40" id="cxR-bv-G2G"/>
                                         </constraints>
                                         <color key="tintColor" name="DarkBlue"/>
                                         <state key="normal" title="Button"/>
@@ -944,8 +947,109 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EZC-Ge-22I">
-                                <rect key="frame" x="0.0" y="129" width="390" height="621"/>
+                                <rect key="frame" x="0.0" y="129" width="390" height="631"/>
                                 <color key="backgroundColor" name="BackgroundWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="grey_chat_bubble" rowHeight="75" id="qg6-ky-H5h" customClass="GreyChatBubble" customModule="iPhone_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qg6-ky-H5h" id="owX-Pp-eV6">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ng0-Hk-mcp">
+                                                    <rect key="frame" x="10" y="30" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="bZy-nC-JoY"/>
+                                                        <constraint firstAttribute="height" constant="40" id="gGc-Gm-Kl4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsB-nu-S7N" customClass="PaddingLabel" customModule="iPhone_App" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="29.666666666666668" width="61.333333333333343" height="40.333333333333329"/>
+                                                    <color key="backgroundColor" name="Grey"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="275" id="IjH-CU-s3r"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" name="TextBlack"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ng0-Hk-mcp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="owX-Pp-eV6" secondAttribute="top" constant="5" id="3CI-66-7aR"/>
+                                                <constraint firstItem="AsB-nu-S7N" firstAttribute="leading" secondItem="ng0-Hk-mcp" secondAttribute="trailing" constant="10" id="4hw-p4-sRi"/>
+                                                <constraint firstItem="AsB-nu-S7N" firstAttribute="top" relation="greaterThanOrEqual" secondItem="owX-Pp-eV6" secondAttribute="top" constant="5" id="Ahk-QV-fwn"/>
+                                                <constraint firstItem="AsB-nu-S7N" firstAttribute="top" relation="lessThanOrEqual" secondItem="owX-Pp-eV6" secondAttribute="top" constant="29.670000000000002" id="BQS-UF-v8O"/>
+                                                <constraint firstAttribute="bottom" secondItem="ng0-Hk-mcp" secondAttribute="bottom" constant="5" id="SKK-uq-8R4"/>
+                                                <constraint firstAttribute="bottom" secondItem="AsB-nu-S7N" secondAttribute="bottom" constant="5" id="UCI-Kt-dfW"/>
+                                                <constraint firstItem="ng0-Hk-mcp" firstAttribute="leading" secondItem="owX-Pp-eV6" secondAttribute="leading" constant="10" id="gmh-L3-p4X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundWhite"/>
+                                        <connections>
+                                            <outlet property="contactImageView" destination="ng0-Hk-mcp" id="4cq-Tf-Evb"/>
+                                            <outlet property="contactMessageLabel" destination="AsB-nu-S7N" id="ll3-al-mTr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="blue_chat_bubble" rowHeight="75" id="W45-qR-bcb" customClass="BlueChatBubble" customModule="iPhone_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="119.66666603088379" width="390" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W45-qR-bcb" id="KlT-jV-8CU">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDZ-ln-TaC" customClass="PaddingLabel" customModule="iPhone_App" customModuleProvider="target">
+                                                    <rect key="frame" x="318.66666666666669" y="29.666666666666668" width="61.333333333333314" height="40.333333333333329"/>
+                                                    <color key="backgroundColor" name="LightBlue"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Izo-eS-lJV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZDZ-ln-TaC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KlT-jV-8CU" secondAttribute="top" constant="5" id="JqH-ne-UQw"/>
+                                                <constraint firstItem="ZDZ-ln-TaC" firstAttribute="top" relation="lessThanOrEqual" secondItem="KlT-jV-8CU" secondAttribute="top" constant="29.670000000000002" id="Qcp-TJ-ZF8"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZDZ-ln-TaC" secondAttribute="trailing" constant="10" id="Ueg-kG-tne"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZDZ-ln-TaC" secondAttribute="bottom" constant="5" id="tJx-mq-k2n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackgroundWhite"/>
+                                        <connections>
+                                            <outlet property="userMessageLabel" destination="ZDZ-ln-TaC" id="RXA-Mb-LzK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundWhite"/>
@@ -965,6 +1069,7 @@
                     <connections>
                         <outlet property="backButton" destination="LMW-Ef-O9D" id="eva-Kg-q51"/>
                         <outlet property="contactAvatarImageView" destination="Dhg-3L-1tV" id="t9X-K9-zhz"/>
+                        <outlet property="conversationTableView" destination="EZC-Ge-22I" id="iGG-WL-tCo"/>
                         <outlet property="fullNameLabel" destination="sWY-Pc-37l" id="uSP-Pt-NXu"/>
                         <outlet property="messageTextField" destination="GY2-ik-8f8" id="eE0-Ek-lYj"/>
                     </connections>
@@ -974,6 +1079,14 @@
             <point key="canvasLocation" x="3641.5384615384614" y="61.848341232227483"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="AsB-nu-S7N">
+            <size key="intrinsicContentSize" width="61.333333333333336" height="40.333333333333329"/>
+        </designable>
+        <designable name="ZDZ-ln-TaC">
+            <size key="intrinsicContentSize" width="61.333333333333336" height="40.333333333333329"/>
+        </designable>
+    </designables>
     <resources>
         <image name="arrow.up" catalog="system" width="120" height="128"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>

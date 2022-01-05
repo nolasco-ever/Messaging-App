@@ -20,6 +20,7 @@ class SearchPage: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         searchResultsTableView.delegate = self
         searchResultsTableView.dataSource = self
@@ -27,6 +28,8 @@ class SearchPage: UIViewController, UITextFieldDelegate {
         searchTextField.delegate = self
         
         searchTextField.layer.cornerRadius = CGFloat(radius)
+        
+        Functions.setPlaceholderColor(textField: searchTextField)
         
         //label needs to be blank when no query has been made
         showingResultsLabel.text = ""

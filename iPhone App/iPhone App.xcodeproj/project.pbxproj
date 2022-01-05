@@ -17,6 +17,10 @@
 		5A1E75F12771797A002BEA30 /* iPhone_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */; };
 		5A1E75F32771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */; };
 		5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E760127718D5E002BEA30 /* SignUpPage.swift */; };
+		5A37936B2784E02D00E03D46 /* GreyChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37936A2784E02D00E03D46 /* GreyChatBubble.swift */; };
+		5A37936D2784E03B00E03D46 /* BlueChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37936C2784E03B00E03D46 /* BlueChatBubble.swift */; };
+		5A3793732784E69A00E03D46 /* ChatObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3793722784E69A00E03D46 /* ChatObject.swift */; };
+		5A3793752784F77E00E03D46 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3793742784F77E00E03D46 /* PaddingLabel.swift */; };
 		5A5C2AC3277FB3AA00C9061C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC2277FB3AA00C9061C /* Functions.swift */; };
 		5A5C2AC5277FCE3E00C9061C /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */; };
 		5A5C2AC9277FE87900C9061C /* ChatVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2AC8277FE87900C9061C /* ChatVariables.swift */; };
@@ -35,6 +39,7 @@
 		5A9F8BE82771AFC600078665 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9F8BE72771AFC600078665 /* FirebaseFirestore */; };
 		5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB188A627768E4300C3BF3D /* SearchPage.swift */; };
 		5AB188A92776BFAD00C3BF3D /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB188A82776BFAD00C3BF3D /* AvatarCell.swift */; };
+		5AFB78F327851B8900F2AD0C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB78F227851B8900F2AD0C /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,10 @@
 		5A1E75F02771797A002BEA30 /* iPhone_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITests.swift; sourceTree = "<group>"; };
 		5A1E75F22771797A002BEA30 /* iPhone_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5A1E760127718D5E002BEA30 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		5A37936A2784E02D00E03D46 /* GreyChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyChatBubble.swift; sourceTree = "<group>"; };
+		5A37936C2784E03B00E03D46 /* BlueChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueChatBubble.swift; sourceTree = "<group>"; };
+		5A3793722784E69A00E03D46 /* ChatObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatObject.swift; sourceTree = "<group>"; };
+		5A3793742784F77E00E03D46 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		5A5C2AC2277FB3AA00C9061C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		5A5C2AC8277FE87900C9061C /* ChatVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVariables.swift; sourceTree = "<group>"; };
@@ -83,6 +92,7 @@
 		5A9F8BDE2771AEF800078665 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AB188A627768E4300C3BF3D /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		5AB188A82776BFAD00C3BF3D /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		5AFB78F227851B8900F2AD0C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,11 @@
 				5A5C2AC2277FB3AA00C9061C /* Functions.swift */,
 				5A5C2AC4277FCE3E00C9061C /* ChatPage.swift */,
 				5A5C2AC8277FE87900C9061C /* ChatVariables.swift */,
+				5A37936A2784E02D00E03D46 /* GreyChatBubble.swift */,
+				5A37936C2784E03B00E03D46 /* BlueChatBubble.swift */,
+				5A3793722784E69A00E03D46 /* ChatObject.swift */,
+				5A3793742784F77E00E03D46 /* PaddingLabel.swift */,
+				5AFB78F227851B8900F2AD0C /* Data.swift */,
 			);
 			path = "iPhone App";
 			sourceTree = "<group>";
@@ -329,12 +344,17 @@
 				5A1E75D02771797A002BEA30 /* AppDelegate.swift in Sources */,
 				5A5C2AC5277FCE3E00C9061C /* ChatPage.swift in Sources */,
 				5A9F8BDB2771AADA00078665 /* AvatarSelection.swift in Sources */,
+				5A3793732784E69A00E03D46 /* ChatObject.swift in Sources */,
 				5AB188A727768E4300C3BF3D /* SearchPage.swift in Sources */,
 				5A5C2AC3277FB3AA00C9061C /* Functions.swift in Sources */,
 				5A5C2AC9277FE87900C9061C /* ChatVariables.swift in Sources */,
 				5A1E760227718D5E002BEA30 /* SignUpPage.swift in Sources */,
 				5A6281AA277AF7370058C20E /* ConversationCell.swift in Sources */,
 				5A9E773E277967F8001F736B /* UserSearchCell.swift in Sources */,
+				5AFB78F327851B8900F2AD0C /* Data.swift in Sources */,
+				5A3793752784F77E00E03D46 /* PaddingLabel.swift in Sources */,
+				5A37936D2784E03B00E03D46 /* BlueChatBubble.swift in Sources */,
+				5A37936B2784E02D00E03D46 /* GreyChatBubble.swift in Sources */,
 				5A8BB1B62777CC6200B23F96 /* Avatars.swift in Sources */,
 				5A1E75D22771797A002BEA30 /* SceneDelegate.swift in Sources */,
 				5A9E7740277968CC001F736B /* UserContactSearch.swift in Sources */,

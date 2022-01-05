@@ -21,6 +21,8 @@ class LoginPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -28,6 +30,9 @@ class LoginPage: UIViewController {
         passwordTextField.layer.cornerRadius = CGFloat(radius)
         loginButton.layer.cornerRadius = CGFloat(radius)
         signUpButton.layer.cornerRadius = CGFloat(radius)
+        
+        Functions.setPlaceholderColor(textField: userTextField)
+        Functions.setPlaceholderColor(textField: passwordTextField)
         
     }
     

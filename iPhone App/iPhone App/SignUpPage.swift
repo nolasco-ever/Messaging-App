@@ -22,6 +22,8 @@ class SignUpPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -29,6 +31,10 @@ class SignUpPage: UIViewController {
         usernameTextField.layer.cornerRadius = CGFloat(radius)
         passwordTextField.layer.cornerRadius = CGFloat(radius)
         signUpButton.layer.cornerRadius = CGFloat(radius)
+        
+        Functions.setPlaceholderColor(textField: fullNameTextField)
+        Functions.setPlaceholderColor(textField: usernameTextField)
+        Functions.setPlaceholderColor(textField: passwordTextField)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {

@@ -57,12 +57,30 @@ class UserSearchCell: UITableViewCell {
         if let currentUserID = UserDefaults.standard.object(forKey: "user_uid_key") as? String {
             let convoID = currentUserID + id
             
+            //add the contact to the current user
             db.collection("users").document(currentUserID).collection("userContacts").document(self.id).setData([
                 "id": id,
                 "name": name!,
                 "email": email!,
                 "conversation": false,
                 "convoID": convoID])
+            
+            //add the current user as a contact to the added contact
+            db.collection("users").document(currentUserID).getDocument { [self] (doc, err) in
+                if let doc = doc, doc.exists {
+                    let data = doc.data()
+                    
+                    let currentName = data?["name"] ?? ""
+                    let currentEmail = data?["email"] ?? ""
+                    
+                    db.collection("users").document(self.id).collection("userContacts").document(currentUserID).setData([
+                        "id": currentUserID,
+                        "name": currentName,
+                        "email": currentEmail,
+                        "conversation": false,
+                        "convoID": convoID])
+                }
+            }
         }
     }
     

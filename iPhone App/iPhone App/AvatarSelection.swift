@@ -17,9 +17,6 @@ class AvatarSelection: UIViewController {
     //create firestore database variable
     let db = Firestore.firestore()
     
-    //initialize empty array
-    var avatarArray: [String] = []
-    
     //variable to hold selected cell
     var selectedCell: Int = 0
     
@@ -30,23 +27,6 @@ class AvatarSelection: UIViewController {
         
         avatarCollectionView.delegate = self
         avatarCollectionView.dataSource = self
-        
-        //retrieve all avatar image links from firestore database
-        db.collection("avatars").getDocuments() { [self] (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            }
-            else{
-                //append all avatar links to avatarArray
-                for doc in querySnapshot!.documents{
-                    let link = doc.get("link") as! String
-                    avatarArray.append(link)
-                    
-                    let indexPath = IndexPath(row: avatarArray.count-1, section: 0)
-                    avatarCollectionView.insertItems(at: [indexPath])
-                }
-            }
-        }
         
     }
     
@@ -71,13 +51,13 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return avatarArray.count
+        return ThisAppData.avatars.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = avatarCollectionView.dequeueReusableCell(withReuseIdentifier: AvatarCell.identifier, for: indexPath) as! AvatarCell
         
-        cell.avatarImageView.image = Functions.getImageFromUrl(from: avatarArray[indexPath.row])
+        cell.avatarImageView.image = Functions.getImageFromUrl(from: ThisAppData.avatars[indexPath.row])
         
         //make sure image is round
         cell.layer.cornerRadius = cell.frame.height / 2
@@ -92,9 +72,7 @@ extension AvatarSelection: UICollectionViewDelegate, UICollectionViewDataSource{
         cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
         
         selectedCell = indexPath.row
-        selectedAvatarLink = avatarArray[selectedCell]
-        
-        print(avatarArray[indexPath.row])
+        selectedAvatarLink = ThisAppData.avatars[selectedCell]
     }
     
 }
